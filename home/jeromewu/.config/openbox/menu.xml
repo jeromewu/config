@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<openbox_menu xmlns="http://openbox.org/3.4/menu">
+
+
+<menu id="exit-openbox-menu" label="Exit">
+  <item label="Log out">
+    <action name="Execute">
+      <command>openbox --exit</command>
+    </action>
+  </item>
+<item label="Reboot">
+    <action name="Execute">
+      <command>systemctl reboot</command>
+    </action>
+  </item>
+<item label="Poweroff">
+    <action name="Execute">
+      <command>systemctl poweroff</command>
+    </action>
+  </item>
+
+</menu>
+
+
+<menu id="root-menu" label="Openbox 3">
+
+ <item label="Terminal">
+    <action name="Execute">
+      <command>lxterminal</command>
+    </action>
+  </item>
+
+ <item label="Web Browser">
+    <action name="Execute">
+      <command>google-chrome-stable</command>
+    </action>
+  </item>
+
+ <item label="File Manager">
+    <action name="Execute">
+      <command>pcmanfm</command>
+    </action>
+  </item>
+
+ <item label="Text Editor">
+    <action name="Execute">
+      <command>leafpad</command>
+    </action>
+  </item>
+
+<separator />
+
+<menu id="Preferences" label="Preferences">
+<item label="Theme settings">
+<action name="Execute">
+<execute>
+lxappearance
+</execute>
+</action>
+</item>
+<item label="Keyboard and Mouse">
+<action name="Execute">
+<execute>
+lxinput
+</execute>
+</action>
+</item>
+<item label="Display">
+<action name="Execute">
+<execute>
+lxrandr
+</execute>
+</action>
+</item>
+<menu id="root-menu-525118" label="Openbox Config">
+<item label="Openbox settings">
+<action name="Execute">
+<execute>
+obconf
+</execute>
+</action>
+</item>
+<item label="Edit Key Bindings">
+<action name="Execute">
+<execute>
+obkey
+</execute>
+</action>
+</item>
+<item label="Edit Menu">
+<action name="Execute">
+<execute>obmenu</execute>
+</action>
+</item>
+<item label="Edit autostart">
+<action name="Execute">
+<execute>
+leafpad ~/.config/openbox/autostart
+</execute>
+</action>
+</item>
+<item label="Reconfigure">
+<action name="Reconfigure"/>
+</item>
+<item label="Restart">
+<action name="Restart"/>
+</item>
+</menu>
+</menu>
+ <menu id="exit-openbox-menu"/>
+
+</openbox_menu>
+
