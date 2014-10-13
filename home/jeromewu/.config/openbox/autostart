@@ -7,7 +7,7 @@
 
 # input method
 fcitx &
-
+nm-applet &
 
 # Enable as required
 #xbacklight -set 100 &
